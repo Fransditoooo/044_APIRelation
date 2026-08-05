@@ -26,4 +26,6 @@ module.exports = (sequelize, DataTypes) => {
             otherKey: 'komik_id',
             as: 'komik'
         });
-    
+    };
+    return Genre;
+};
