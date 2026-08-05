@@ -25,4 +25,5 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'komik',
         timestamps: true
     });
-    
+    Komik.associate = (models) => {
+        
