@@ -19,4 +19,5 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: true
     });
 
-    
+    Genre.associate = (models) => {
+        
