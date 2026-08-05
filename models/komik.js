@@ -26,4 +26,8 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: true
     });
     Komik.associate = (models) => {
-        
+        Komik.belongsTo(models.Penulis, {
+            foreignKey: 'penulis_id',
+            as: 'penulis'
+        });
+       
